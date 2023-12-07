@@ -1,0 +1,2 @@
+#!/bin/bash
+q | grep -e 'E-Level' -e "\[$USER\]" --color=never | grep -v -e 'finished' | head
