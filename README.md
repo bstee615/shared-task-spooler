@@ -3,11 +3,15 @@
 This shared queue uses task-spooler, see docs here (https://manpages.ubuntu.com/manpages/xenial/man1/tsp.1.html).
 This will help us to run jobs without clashing on GPU usage.
 
-Install the tool by adding this directory to your PATH. You can add this to your `~/.bashrc` to make it permanent.
+# Installation
+1. Install dependencies: `sudo apt install -y task-spooler`.
+2. Install the tool by adding the current directory to your PATH. You can add this to your `~/.bashrc` to make it permanent.
 
-`export PATH="$PATH:/opt/shared-queue"`
+```bash
+export PATH="$PATH:/opt/shared-queue" # or wherever you installed it :)
+````
 
-## Main command: `q` (queue)
+# Main command: `q` (queue)
 `q` is an alias for `tsp` (task-spooler) with some extra things like auto-labeling with the username of the invoker.
 
 Common commands:
