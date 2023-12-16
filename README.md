@@ -7,7 +7,7 @@ Install the tool by adding this directory to your PATH. You can add this to your
 
 `export PATH="$PATH:/opt/shared-queue"`
 
-## `q`
+## Main command: `q` (queue)
 `q` is an alias for `tsp` (task-spooler) with some extra things like auto-labeling with the username of the invoker.
 
 Common commands:
@@ -21,11 +21,10 @@ Common commands:
 - Run `q -U <job-id 1>-<job-id 2>` (very specific syntax) to swap two jobs in the queue.
   Example: `q -U 1-10` swaps the order of jobs 1 and 10.
 
-## `qh` (queue head)
-`qh` is a convenience tool to query the first few jobs submitted by the user which are not finished yet (queued or running).
-Usage: `qh`.
-
-## `qr` (queue remove)
-`qr` is a helper to remove multiple jobs at once.
+# Convenience commands
+- `qm` (queue mine) is a convenience tool to list all jobs submitted by the current user.
+- `ql` (queue live) is a convenience tool to list all jobs submitted by the current user which are not finished yet (queued or running).
+- `qh` (queue head) is a convenience tool to list the first few jobs submitted by the current user.
+- `qr` (queue remove) is a helper to remove multiple jobs at once.
 Usage: `qr <job-id-1> <job-id-2> .. <job-id-n>`
 
